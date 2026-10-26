@@ -1,87 +1,81 @@
 # PeopleCore — Human Resource Information System (HRIS)
 
-PeopleCore adalah aplikasi berbasis web untuk membantu pengelolaan data dan administrasi sumber daya manusia dalam suatu perusahaan. Sistem ini dikembangkan sebagai proyek portofolio untuk menerapkan kemampuan pengembangan sistem, pengelolaan basis data, validasi data, serta penyajian informasi dan laporan.
+PeopleCore adalah aplikasi berbasis web untuk membantu perusahaan mengelola informasi dan administrasi sumber daya manusia secara terstruktur. Aplikasi ini dikembangkan sebagai proyek portofolio untuk menerapkan kemampuan pengembangan sistem, pengelolaan basis data relasional, validasi data, pengaturan hak akses, serta penyajian informasi untuk mendukung aktivitas operasional HR.
 
-PeopleCore menyediakan fitur pengelolaan data karyawan, struktur organisasi, kehadiran, pengajuan dan persetujuan cuti, kuota cuti, serta laporan HR dalam satu sistem terintegrasi.
+Sistem ini mengintegrasikan pengelolaan data karyawan, struktur organisasi, riwayat kepegawaian, kehadiran, pengajuan cuti, kuota cuti, dan laporan HR dalam satu aplikasi.
 
 ## Preview Aplikasi
 
-### 1. Dashboard
+### Dashboard
 
-Dashboard menyajikan ringkasan informasi kepegawaian untuk membantu pengguna memantau kondisi data dan aktivitas HR.
+Dashboard menyajikan ringkasan informasi kepegawaian sehingga pengguna dapat melihat gambaran umum data dan aktivitas HR melalui satu halaman.
 
 ![PeopleCore Dashboard](docs/screenshots/dashboard.png)
 
-### 2. Manajemen Data Karyawan
+### Manajemen Data Karyawan
 
-Halaman ini digunakan untuk mengelola data karyawan secara terstruktur, termasuk proses penambahan, peninjauan, perubahan, dan pengelolaan informasi karyawan.
+Modul karyawan digunakan untuk mengelola informasi kepegawaian secara terstruktur. Fitur ini mendukung proses pengelolaan data sehingga informasi karyawan dapat dipelihara dan diakses sesuai kebutuhan serta hak akses pengguna.
 
 ![Manajemen Data Karyawan](docs/screenshots/data-karyawan.png)
 
-### 3. Detail dan Riwayat Kepegawaian
+### Persetujuan Cuti
 
-Halaman detail karyawan menyajikan informasi kepegawaian secara lebih lengkap, termasuk riwayat kepegawaian yang tercatat dalam sistem.
-
-![Detail Karyawan](docs/screenshots/detail-karyawan.png)
-
-### 4. Manajemen Kehadiran
-
-Fitur kehadiran membantu pencatatan dan pemantauan status kehadiran karyawan, termasuk informasi tanggal serta waktu masuk dan keluar sesuai data yang tersedia.
-
-![Manajemen Kehadiran](docs/screenshots/kehadiran.png)
-
-### 5. Pengajuan Cuti
-
-Karyawan dapat mengajukan cuti melalui sistem, sehingga permohonan tercatat dan dapat ditindaklanjuti sesuai alur pengelolaan cuti.
-
-![Pengajuan Cuti](docs/screenshots/pengajuan-cuti.png)
-
-### 6. Persetujuan Cuti
-
-Fitur ini mendukung proses pemeriksaan dan pengelolaan permohonan cuti oleh pihak yang memiliki hak akses sesuai perannya.
+Modul cuti mendukung alur administrasi permohonan cuti, mulai dari pengajuan hingga proses pemeriksaan dan persetujuan oleh pengguna yang memiliki kewenangan.
 
 ![Persetujuan Cuti](docs/screenshots/persetujuan-cuti.png)
 
 ## Fitur Utama
 
-### Pengelolaan Data Kepegawaian
+### 1. Pengelolaan Data Karyawan
 
-- Manajemen data karyawan.
-- Pengelolaan departemen dan jabatan.
-- Pencatatan riwayat kepegawaian.
-- Manajemen akun pengguna dan hak akses.
+- Menambahkan, melihat, memperbarui, dan mengelola data karyawan.
+- Mengelola informasi departemen dan jabatan.
+- Menyediakan detail karyawan dan pencatatan riwayat kepegawaian.
+- Menjaga keterkaitan data karyawan dengan data organisasi melalui basis data relasional.
 
-### Kehadiran dan Cuti
+### 2. Manajemen Kehadiran
 
-- Pencatatan dan pemantauan kehadiran karyawan.
-- Pengajuan dan persetujuan cuti.
-- Pengelolaan kuota atau saldo cuti.
-- Penyimpanan data administrasi kehadiran dan cuti.
+- Mencatat informasi kehadiran karyawan berdasarkan tanggal.
+- Mengelola status kehadiran serta waktu masuk dan keluar sesuai data yang dicatat.
+- Menyediakan tampilan daftar kehadiran dan penyaringan data untuk mempermudah peninjauan.
 
-### Laporan dan Pengelolaan Data
+### 3. Manajemen Cuti
 
-- Penyajian laporan HR.
-- Rekapitulasi data sesuai fitur laporan yang tersedia.
-- Ekspor laporan ke format CSV.
-- Validasi input untuk menjaga konsistensi data.
+- Mendukung pengajuan cuti oleh karyawan.
+- Mendukung pemeriksaan dan persetujuan permohonan berdasarkan hak akses pengguna.
+- Mengelola informasi kuota atau saldo cuti.
+- Menyimpan informasi permohonan dan statusnya untuk membantu penelusuran administrasi cuti.
 
-### Hak Akses Pengguna
+### 4. Laporan HR dan Ekspor Data
 
-Sistem menyediakan pembagian hak akses berdasarkan peran pengguna, yaitu:
+- Menyediakan laporan berdasarkan data HR yang tersedia dalam sistem.
+- Mendukung peninjauan data untuk kebutuhan administrasi dan pemantauan.
+- Menyediakan ekspor laporan ke format CSV agar data dapat digunakan lebih lanjut dalam spreadsheet atau proses pengolahan data lainnya.
 
-- **Admin** — mengelola akun dan data yang menjadi kewenangannya.
-- **HR** — menjalankan aktivitas administrasi kepegawaian sesuai hak aksesnya.
-- **Karyawan** — mengakses fitur kepegawaian yang tersedia bagi karyawan.
+### 5. Akun dan Hak Akses
+
+Sistem menerapkan pembagian akses berdasarkan peran pengguna untuk membatasi penggunaan fitur sesuai kewenangannya:
+
+- **Admin:** pengelolaan akun dan data yang menjadi kewenangannya.
+- **HR:** akses ke fungsi administrasi kepegawaian sesuai hak akses yang diberikan.
+- **Karyawan:** akses ke fungsi kepegawaian yang tersedia bagi karyawan.
+
+### 6. Validasi dan Konsistensi Data
+
+- Menggunakan validasi input pada proses pengelolaan data.
+- Mengatur relasi antartabel untuk menjaga keterkaitan informasi.
+- Menerapkan pembatasan akses pada fungsi yang memerlukan kewenangan tertentu.
 
 ## Teknologi yang Digunakan
 
-- **Bahasa pemrograman:** PHP
-- **Framework:** Laravel
-- **Database:** MySQL
-- **Frontend:** Blade, HTML, Tailwind CSS, dan JavaScript sesuai implementasi
-- **Build tool:** Vite
-- **Development tools:** Visual Studio Code, Laragon
-- **Version control:** Git dan GitHub
+- **PHP** — bahasa pemrograman sisi server.
+- **Laravel** — framework untuk mengembangkan logika aplikasi, routing, autentikasi, dan pengelolaan data.
+- **MySQL** — penyimpanan data relasional.
+- **Blade dan HTML** — penyusunan halaman antarmuka.
+- **Tailwind CSS** — pengaturan tampilan dan tata letak antarmuka.
+- **JavaScript** — interaksi antarmuka sesuai implementasi.
+- **Vite** — pengelolaan aset frontend.
+- **Git dan GitHub** — version control dan penyimpanan repository proyek.
 
 ## Struktur Proyek
 
@@ -120,13 +114,7 @@ PeopleCore/
 
 ### Prasyarat
 
-Pastikan perangkat sudah memiliki:
-
-- PHP yang sesuai dengan kebutuhan versi Laravel proyek.
-- Composer.
-- Node.js dan npm.
-- MySQL.
-- Git.
+Pastikan PHP yang kompatibel dengan proyek, Composer, Node.js, npm, MySQL, dan Git sudah terpasang.
 
 ### 1. Clone repository
 
@@ -137,15 +125,16 @@ cd PeopleCore
 
 Ganti `USERNAME` dengan username GitHub pemilik repository.
 
-### 2. Instal dependensi PHP
+### 2. Instal dependensi
 
 ```bash
 composer install
+npm install
 ```
 
-### 3. Konfigurasi environment
+### 3. Siapkan konfigurasi environment
 
-Salin file `.env.example` menjadi `.env`.
+Salin `.env.example` menjadi `.env`.
 
 Pada Windows Command Prompt:
 
@@ -153,24 +142,17 @@ Pada Windows Command Prompt:
 copy .env.example .env
 ```
 
-Buat application key:
+Kemudian buat application key:
 
 ```bash
 php artisan key:generate
 ```
 
-### 4. Konfigurasi database
+### 4. Siapkan database
 
-Buat database MySQL dengan nama `peoplecore`, kemudian sesuaikan konfigurasi database pada file `.env`.
-
-Contoh konfigurasi lokal:
+Buat database MySQL bernama `peoplecore`, kemudian sesuaikan konfigurasi database pada file `.env` dengan lingkungan lokal.
 
 ```dotenv
-APP_NAME=PeopleCore
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://127.0.0.1:8000
-
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -179,73 +161,62 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Sesuaikan username dan password database dengan konfigurasi perangkat masing-masing. Konfigurasi di atas merupakan contoh lingkungan pengembangan lokal, bukan konfigurasi produksi.
+Sesuaikan username dan password dengan konfigurasi MySQL yang digunakan.
 
-### 5. Instal dependensi frontend
-
-```bash
-npm install
-```
-
-### 6. Jalankan migrasi database
+Jalankan migrasi:
 
 ```bash
 php artisan migrate
 ```
 
-Jika ingin menggunakan data demonstrasi, jalankan seeder yang tersedia dan telah disiapkan untuk lingkungan pengembangan:
+Jika seeder proyek telah disiapkan untuk instalasi baru dan data demonstrasi dibutuhkan, jalankan:
 
 ```bash
 php artisan db:seed
 ```
 
-Pastikan konfigurasi seeder sesuai dengan kebutuhan dan data awal proyek sebelum menjalankannya.
+### 5. Jalankan aplikasi
 
-### 7. Jalankan aplikasi
-
-Buka terminal pertama:
+Jalankan server Laravel:
 
 ```bash
 php artisan serve
 ```
 
-Buka terminal kedua:
+Pada terminal terpisah, jalankan Vite:
 
 ```bash
 npm run dev
 ```
 
-Kemudian akses aplikasi melalui:
+Buka aplikasi melalui `http://127.0.0.1:8000`.
 
-http://127.0.0.1:8000
+## Fokus Pengembangan
+
+PeopleCore dikembangkan dengan fokus pada dua aspek utama:
+
+- **Pengelolaan Data:** pengorganisasian data karyawan, relasi data organisasi, pencatatan kehadiran, pengelolaan cuti, dan penyediaan data laporan.
+- **Pengembangan Sistem:** implementasi modul aplikasi, alur proses administrasi HR, validasi input, autentikasi, pembagian hak akses, dan integrasi basis data.
+
+Proyek ini menjadi sarana penerapan konsep pengembangan aplikasi web dan pengelolaan data dalam sebuah studi kasus sistem informasi kepegawaian.
 
 ## Pengujian
 
-Pengujian fungsional dilakukan terhadap fitur-fitur utama yang dikembangkan, antara lain:
+Fitur utama diuji secara fungsional dalam lingkungan pengembangan, meliputi autentikasi dan hak akses, pengelolaan data karyawan, kehadiran, pengajuan dan persetujuan cuti, pengelolaan kuota cuti, serta laporan dan ekspor CSV.
 
-- Autentikasi dan pembatasan hak akses.
-- Pengelolaan data karyawan dan data master.
-- Pencatatan kehadiran.
-- Pengajuan dan persetujuan cuti.
-- Pengelolaan kuota cuti.
-- Penyajian laporan dan ekspor CSV.
-- Validasi input dan konsistensi relasi data.
+Pengujian dilakukan untuk memeriksa apakah alur utama sistem berjalan sesuai dengan fungsi yang dirancang.
 
-Pengujian dilakukan untuk memastikan alur utama aplikasi berjalan sesuai fungsinya.
+## Keamanan dan Pengelolaan Konfigurasi
 
-## Keamanan dan Pengelolaan Data
-
-- Menggunakan autentikasi dan pembagian hak akses berdasarkan peran pengguna.
-- Menerapkan validasi input pada proses pengelolaan data.
-- Menggunakan file `.env` untuk konfigurasi lokal dan informasi sensitif.
-- Tidak menyertakan file `.env` yang berisi kredensial ke repository publik.
-- Menggunakan data fiktif untuk keperluan demonstrasi dan screenshot portofolio.
+- Konfigurasi lokal dan kredensial disimpan pada file `.env`.
+- File `.env` tidak boleh diunggah ke repository publik.
+- File `.env.example` digunakan sebagai contoh konfigurasi.
+- Akses fitur dibatasi berdasarkan autentikasi dan peran pengguna.
+- Data fiktif digunakan untuk demonstrasi dan dokumentasi portofolio.
 
 ## Status Proyek
 
-PeopleCore dikembangkan sebagai proyek portofolio yang berfokus pada pengembangan aplikasi web untuk administrasi kepegawaian, pengelolaan data terstruktur, serta penyajian laporan.
-
-Fitur-fitur utama telah diimplementasikan dan diuji secara fungsional dalam lingkungan pengembangan.
+PeopleCore merupakan proyek portofolio pengembangan sistem informasi kepegawaian. Modul utama telah diimplementasikan dan diuji secara fungsional dalam lingkungan pengembangan.
 
 ## Lisensi
 
