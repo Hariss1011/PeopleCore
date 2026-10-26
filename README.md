@@ -1,75 +1,87 @@
 # PeopleCore — Human Resource Information System (HRIS)
 
-PeopleCore adalah aplikasi berbasis web untuk membantu pengelolaan sumber daya manusia (SDM) secara terstruktur dan terintegrasi. Proyek ini dikembangkan sebagai portofolio untuk menunjukkan kemampuan dalam pengembangan sistem informasi, pengelolaan data, perancangan database, serta pembuatan laporan operasional.
+PeopleCore adalah aplikasi berbasis web untuk membantu pengelolaan data dan administrasi sumber daya manusia dalam suatu perusahaan. Sistem ini dikembangkan sebagai proyek portofolio untuk menerapkan kemampuan pengembangan sistem, pengelolaan basis data, validasi data, serta penyajian informasi dan laporan.
 
-## Fitur Utama
+PeopleCore menyediakan fitur pengelolaan data karyawan, struktur organisasi, kehadiran, pengajuan dan persetujuan cuti, kuota cuti, serta laporan HR dalam satu sistem terintegrasi.
+
+## Preview Aplikasi
 
 ### 1. Dashboard
 
-- Menampilkan ringkasan informasi kepegawaian.
-- Menyajikan statistik kehadiran dan informasi cuti.
-- Menyediakan akses cepat ke modul sesuai hak akses pengguna.
+Dashboard menyajikan ringkasan informasi kepegawaian untuk membantu pengguna memantau kondisi data dan aktivitas HR.
+
+![PeopleCore Dashboard](docs/screenshots/dashboard.png)
 
 ### 2. Manajemen Data Karyawan
 
-- Menambah, melihat, mengubah, dan mengelola data karyawan.
-- Menghubungkan data karyawan dengan departemen, jabatan, dan akun pengguna.
-- Menyimpan informasi kepegawaian secara terstruktur.
+Halaman ini digunakan untuk mengelola data karyawan secara terstruktur, termasuk proses penambahan, peninjauan, perubahan, dan pengelolaan informasi karyawan.
 
-### 3. Manajemen Departemen dan Jabatan
+![Manajemen Data Karyawan](docs/screenshots/data-karyawan.png)
 
-- Mengelola data departemen perusahaan.
-- Mengelola data jabatan.
-- Menjaga keterkaitan data organisasi dengan data karyawan.
+### 3. Detail dan Riwayat Kepegawaian
 
-### 4. Manajemen Akun dan Hak Akses
+Halaman detail karyawan menyajikan informasi kepegawaian secara lebih lengkap, termasuk riwayat kepegawaian yang tercatat dalam sistem.
 
-- Mengelola akun pengguna.
-- Menerapkan pembatasan akses berdasarkan peran pengguna.
-- Mendukung pemisahan akses Admin, HR, dan karyawan.
+![Detail Karyawan](docs/screenshots/detail-karyawan.png)
 
-### 5. Riwayat Kepegawaian
+### 4. Manajemen Kehadiran
 
-- Mencatat riwayat perubahan informasi kepegawaian.
-- Membantu penelusuran perubahan jabatan, departemen, dan status kerja sesuai implementasi sistem.
+Fitur kehadiran membantu pencatatan dan pemantauan status kehadiran karyawan, termasuk informasi tanggal serta waktu masuk dan keluar sesuai data yang tersedia.
 
-### 6. Manajemen Kehadiran
+![Manajemen Kehadiran](docs/screenshots/kehadiran.png)
 
-- Mencatat dan menampilkan data kehadiran karyawan.
-- Menyimpan informasi tanggal, status, jam masuk, dan jam keluar sesuai data yang tersedia.
-- Menyediakan fitur pencarian atau penyaringan data kehadiran.
+### 5. Pengajuan Cuti
 
-### 7. Manajemen Cuti
+Karyawan dapat mengajukan cuti melalui sistem, sehingga permohonan tercatat dan dapat ditindaklanjuti sesuai alur pengelolaan cuti.
 
-- Memungkinkan karyawan mengajukan cuti.
-- Mendukung proses peninjauan dan persetujuan atau penolakan pengajuan.
-- Menampilkan status pengajuan cuti.
-- Mengelola jenis cuti dan saldo atau kuota cuti karyawan.
+![Pengajuan Cuti](docs/screenshots/pengajuan-cuti.png)
 
-### 8. Laporan dan Ekspor Data
+### 6. Persetujuan Cuti
 
-- Menyajikan laporan terkait administrasi kepegawaian.
-- Mendukung penyaringan laporan berdasarkan parameter yang tersedia.
-- Mengekspor data laporan ke format CSV untuk membantu pengolahan lebih lanjut menggunakan aplikasi spreadsheet.
+Fitur ini mendukung proses pemeriksaan dan pengelolaan permohonan cuti oleh pihak yang memiliki hak akses sesuai perannya.
 
-## Hak Akses Pengguna
+![Persetujuan Cuti](docs/screenshots/persetujuan-cuti.png)
 
-| Peran    | Tanggung Jawab                                                                                 |
-| -------- | ---------------------------------------------------------------------------------------------- |
-| Admin    | Mengelola akun, data master, dan akses administratif sesuai kewenangan sistem.                 |
-| HR       | Mengelola informasi kepegawaian, kehadiran, cuti, dan laporan sesuai hak akses.                |
-| Karyawan | Mengakses informasi pribadi dan menggunakan fitur kehadiran atau pengajuan cuti yang tersedia. |
+## Fitur Utama
 
-Hak akses aktual mengikuti konfigurasi role dan otorisasi yang diterapkan pada aplikasi.
+### Pengelolaan Data Kepegawaian
+
+- Manajemen data karyawan.
+- Pengelolaan departemen dan jabatan.
+- Pencatatan riwayat kepegawaian.
+- Manajemen akun pengguna dan hak akses.
+
+### Kehadiran dan Cuti
+
+- Pencatatan dan pemantauan kehadiran karyawan.
+- Pengajuan dan persetujuan cuti.
+- Pengelolaan kuota atau saldo cuti.
+- Penyimpanan data administrasi kehadiran dan cuti.
+
+### Laporan dan Pengelolaan Data
+
+- Penyajian laporan HR.
+- Rekapitulasi data sesuai fitur laporan yang tersedia.
+- Ekspor laporan ke format CSV.
+- Validasi input untuk menjaga konsistensi data.
+
+### Hak Akses Pengguna
+
+Sistem menyediakan pembagian hak akses berdasarkan peran pengguna, yaitu:
+
+- **Admin** — mengelola akun dan data yang menjadi kewenangannya.
+- **HR** — menjalankan aktivitas administrasi kepegawaian sesuai hak aksesnya.
+- **Karyawan** — mengakses fitur kepegawaian yang tersedia bagi karyawan.
 
 ## Teknologi yang Digunakan
 
-- **Backend:** PHP dan Laravel
-- **Frontend:** Blade, HTML, Tailwind CSS, dan JavaScript sesuai implementasi
+- **Bahasa pemrograman:** PHP
+- **Framework:** Laravel
 - **Database:** MySQL
-- **Build Tool:** Vite
-- **Version Control:** Git dan GitHub
-- **Development Environment:** Visual Studio Code dan Laragon
+- **Frontend:** Blade, HTML, Tailwind CSS, dan JavaScript sesuai implementasi
+- **Build tool:** Vite
+- **Development tools:** Visual Studio Code, Laragon
+- **Version control:** Git dan GitHub
 
 ## Struktur Proyek
 
@@ -77,13 +89,21 @@ Hak akses aktual mengikuti konfigurasi role dan otorisasi yang diterapkan pada a
 PeopleCore/
 ├── app/
 │   ├── Http/
-│   │   └── Controllers/
-│   ├── Models/
-│   └── ...
+│   │   ├── Controllers/
+│   │   └── Requests/
+│   └── Models/
 ├── database/
 │   ├── migrations/
 │   └── seeders/
-├── public/
+├── docs/
+│   └── screenshots/
+│       ├── dashboard.png
+│       ├── data-karyawan.png
+│       ├── detail-karyawan.png
+│       ├── kehadiran.png
+│       ├── kuota-cuti.png
+│       ├── persetujuan-cuti.png
+│       └── pengajuan-cuti.png
 ├── resources/
 │   └── views/
 ├── routes/
@@ -96,21 +116,19 @@ PeopleCore/
 └── README.md
 ```
 
-Struktur di atas merupakan gambaran bagian utama proyek Laravel. Isi folder dapat berkembang sesuai implementasi aplikasi.
+## Instalasi dan Menjalankan Aplikasi
 
-## Persyaratan Sistem
+### Prasyarat
 
-Pastikan perangkat telah memiliki:
+Pastikan perangkat sudah memiliki:
 
-- PHP dengan versi yang sesuai dengan dependensi proyek.
+- PHP yang sesuai dengan kebutuhan versi Laravel proyek.
 - Composer.
 - Node.js dan npm.
 - MySQL.
 - Git.
 
-## Instalasi dan Menjalankan Aplikasi
-
-### 1. Clone Repository
+### 1. Clone repository
 
 ```bash
 git clone https://github.com/USERNAME/PeopleCore.git
@@ -119,21 +137,21 @@ cd PeopleCore
 
 Ganti `USERNAME` dengan username GitHub pemilik repository.
 
-### 2. Instal Dependensi Backend
+### 2. Instal dependensi PHP
 
 ```bash
 composer install
 ```
 
-### 3. Konfigurasi Environment
+### 3. Konfigurasi environment
 
-Salin file konfigurasi contoh:
+Salin file `.env.example` menjadi `.env`.
 
-```bash
+Pada Windows Command Prompt:
+
+```bat
 copy .env.example .env
 ```
-
-Perintah di atas berlaku untuk Windows Command Prompt. Sesuaikan jika menggunakan terminal lain.
 
 Buat application key:
 
@@ -141,11 +159,13 @@ Buat application key:
 php artisan key:generate
 ```
 
-### 4. Konfigurasi Database
+### 4. Konfigurasi database
 
-Buat database MySQL, misalnya `peoplecore`, lalu sesuaikan konfigurasi database pada file `.env`:
+Buat database MySQL dengan nama `peoplecore`, kemudian sesuaikan konfigurasi database pada file `.env`.
 
-```env
+Contoh konfigurasi lokal:
+
+```dotenv
 APP_NAME=PeopleCore
 APP_ENV=local
 APP_DEBUG=true
@@ -159,31 +179,29 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Sesuaikan nama database, username, password, dan konfigurasi lain dengan lingkungan lokal.
+Sesuaikan username dan password database dengan konfigurasi perangkat masing-masing. Konfigurasi di atas merupakan contoh lingkungan pengembangan lokal, bukan konfigurasi produksi.
 
-### 5. Instal Dependensi Frontend
+### 5. Instal dependensi frontend
 
 ```bash
 npm install
 ```
 
-### 6. Jalankan Migration dan Seeder
-
-Jalankan migration untuk membuat struktur database:
+### 6. Jalankan migrasi database
 
 ```bash
 php artisan migrate
 ```
 
-Jika ingin mengisi database dengan data demo, jalankan:
+Jika ingin menggunakan data demonstrasi, jalankan seeder yang tersedia dan telah disiapkan untuk lingkungan pengembangan:
 
 ```bash
 php artisan db:seed
 ```
 
-Seeder harus mengikuti konfigurasi yang tersedia di proyek. Pastikan database yang digunakan adalah database pengembangan, karena seeder dapat menambahkan atau mengubah data.
+Pastikan konfigurasi seeder sesuai dengan kebutuhan dan data awal proyek sebelum menjalankannya.
 
-### 7. Jalankan Aplikasi
+### 7. Jalankan aplikasi
 
 Buka terminal pertama:
 
@@ -197,52 +215,38 @@ Buka terminal kedua:
 npm run dev
 ```
 
-Akses aplikasi melalui:
+Kemudian akses aplikasi melalui:
 
-```text
 http://127.0.0.1:8000
-```
 
 ## Pengujian
 
-Pengujian fungsional dilakukan pada modul utama aplikasi, meliputi:
+Pengujian fungsional dilakukan terhadap fitur-fitur utama yang dikembangkan, antara lain:
 
 - Autentikasi dan pembatasan hak akses.
-- Dashboard dan navigasi.
-- Pengelolaan data karyawan serta data master.
-- Riwayat kepegawaian.
-- Pencatatan dan penyaringan kehadiran.
-- Pengajuan, persetujuan, dan penolakan cuti.
-- Pengelolaan jenis serta saldo cuti.
-- Laporan dan ekspor CSV.
-- Validasi data dan konsistensi relasi database.
-- Alur penggunaan aplikasi dari sisi karyawan hingga HR atau Admin.
+- Pengelolaan data karyawan dan data master.
+- Pencatatan kehadiran.
+- Pengajuan dan persetujuan cuti.
+- Pengelolaan kuota cuti.
+- Penyajian laporan dan ekspor CSV.
+- Validasi input dan konsistensi relasi data.
 
-## Keamanan
+Pengujian dilakukan untuk memastikan alur utama aplikasi berjalan sesuai fungsinya.
 
-- Kredensial database disimpan pada file `.env`.
-- File `.env` tidak boleh diunggah ke repository publik.
-- File `.env.example` digunakan sebagai referensi konfigurasi tanpa menyertakan rahasia.
-- Akses fitur dibatasi berdasarkan autentikasi dan otorisasi aplikasi.
-- Validasi input diterapkan pada proses pengolahan data sesuai kebutuhan modul.
+## Keamanan dan Pengelolaan Data
 
-## Tujuan Pengembangan
-
-PeopleCore dikembangkan untuk menerapkan konsep pengembangan sistem informasi dalam skenario administrasi SDM. Proyek ini juga menjadi sarana untuk memperkuat keterampilan dalam:
-
-- Pengelolaan dan validasi data.
-- Perancangan relasi database.
-- Pengembangan aplikasi web menggunakan Laravel.
-- Penerapan autentikasi dan otorisasi berbasis peran.
-- Penyusunan laporan dan ekspor data.
-- Penggunaan Git dan GitHub untuk pengelolaan kode sumber.
+- Menggunakan autentikasi dan pembagian hak akses berdasarkan peran pengguna.
+- Menerapkan validasi input pada proses pengelolaan data.
+- Menggunakan file `.env` untuk konfigurasi lokal dan informasi sensitif.
+- Tidak menyertakan file `.env` yang berisi kredensial ke repository publik.
+- Menggunakan data fiktif untuk keperluan demonstrasi dan screenshot portofolio.
 
 ## Status Proyek
 
-**Status:** Implementasi fitur utama dan pengujian fungsional selesai.
+PeopleCore dikembangkan sebagai proyek portofolio yang berfokus pada pengembangan aplikasi web untuk administrasi kepegawaian, pengelolaan data terstruktur, serta penyajian laporan.
 
-PeopleCore merupakan proyek portofolio untuk keperluan pembelajaran dan demonstrasi kemampuan pengembangan sistem informasi. Aplikasi ini bukan produk HRIS komersial yang telah menjalani audit keamanan independen.
+Fitur-fitur utama telah diimplementasikan dan diuji secara fungsional dalam lingkungan pengembangan.
 
 ## Lisensi
 
-Proyek ini dikembangkan untuk portofolio pribadi dan pembelajaran. Penggunaan ulang kode dapat disesuaikan dengan kebutuhan dan ketentuan yang ditetapkan oleh pemilik repository.
+Proyek ini dibuat untuk tujuan pembelajaran dan portofolio. Ketentuan penggunaan dan distribusi mengikuti lisensi yang ditetapkan pada repository.
